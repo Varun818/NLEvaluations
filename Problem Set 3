@@ -1,0 +1,50 @@
+Please answer the below questions:
+
+A. Write and share a small note about your choice of system to schedule periodic tasks (such as downloading a list of ISINs every 24 hours). Why did you choose it? Is it reliable enough; Or will it scale? If not, what are the problems with it? And, what else would you recommend to fix this problem at scale in production?
+
+B. In what circumstances would you use Flask instead of Django and vice versa? 
+
+
+Answers
+
+A] I would say all the things that I have heard , I have not personally used it though.
+
+The choice of system would be Apache airflow, I have heard it is reliable for holding track record, it is scalable and it is flexible in data processing allows usage of python.
+
+Issues might be with the complexity which includes setup and maintenance and may be time consuming.
+
+Alternative would be to use celery or cron jobs 
+
+For fixing the problem use AWS MWAA  or Google Cloud Composer these have less maintenance issues that's what I have heard.
+
+B] Use Flask when:
+
+
+ Flask is ideal for building smaller applications with simple requirements,
+ Flask is well-suited for creating RESTful APIs due to its lightweight nature,
+ Flask's minimalistic approach makes it perfect for rapid prototyping and
+ Flask's async capabilities make it suitable for real-time applications.
+
+
+
+
+
+Use Django when:
+
+
+ Django is better suited for large, complex applications with multiple features,
+ Django's batteries-included approach accelerates development,
+ Django's scalability features make it suitable for high-traffic websites,
+ Django provides robust security features out-of-the-box and
+ Django’s admin interface is a powerful feature for managing application data without additional development effort.
+
+
+Key Differences
+
+Django is larger and more complex than Flask,
+ Django comes with an ORM, while Flask requires a third-party library and 
+ Django has built-in template engines, whereas Flask uses Jinja2.
+
+
+Ultimately, choose Flask for smaller, API-focused applications and Django for larger, more complex projects requiring rapid development and robust security.
+
